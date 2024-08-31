@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Format Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Audio Format Converter</h1>
+        <form id="upload-form">
+            <input type="file" id="audio-file" accept=".mp3" required>
+            <button type="submit">Convert to WAV</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/ffmpeg.wasm@latest"></script>
+    <script src="script.js"></script>
+</body>
+</html>
